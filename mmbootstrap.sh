@@ -1,4 +1,4 @@
-mmdebstrap \
+sudo mmdebstrap \
 	--mode=unshare \
 	--architectures=arm64 \
 	--variant=standard \
