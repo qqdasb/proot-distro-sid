@@ -23,11 +23,6 @@ jobs:
     - name: Pack rootfs
       run: ./pack-rootfs.sh
     - name: Upload rootfs to Release
-      uses: actions/upload-release-asset@v1
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      uses: softprops/action-gh-release@v2
       with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path:  debian-sid-arm64-rootfs.tar.xz
-          asset_name:  debian-sid-arm64-rootfs.tar.xz
-          asset_content_type: application/zip
+          files: debian-sid-arm64-rootfs.tar.xz
