@@ -1,0 +1,24 @@
+name: Build rootfs
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-22.04
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Prepare
+      run: |
+        sudo apt update
+        sudo apt installcurl debian-archive-keyring jq mmdebstrap qemu-user-static binfmt-support multistrap
+        sudo chmod a+x *.sh
+    - name: Build
+      run: ./mmbootstrap.sh
+    - name: Pack rootfs
+      run: ./pack-rootfs.sh
