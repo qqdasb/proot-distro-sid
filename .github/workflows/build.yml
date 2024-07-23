@@ -2,15 +2,12 @@ name: Build rootfs
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    tags:
+      - "v*.*.
 
 jobs:
   build:
-
     runs-on: ubuntu-24.04
-
     steps:
     - uses: actions/checkout@v4
     - name: Prepare
