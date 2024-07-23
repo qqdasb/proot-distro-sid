@@ -24,3 +24,5 @@ wget https://raw.staticdn.net/qqdasb/proot-distro-sid/main/debian-unstable.sh -O
 ```bash
 pd install debian-unstable
 ```
+
+Nightly images are in [here](https://github.com/qqdasb/proot-distro-sid/actions)
