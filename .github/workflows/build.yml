@@ -1,9 +1,6 @@
 name: Build rootfs
 
-on:
-  push:
-    tags:
-      - "v*.*.*"
+on: push
 
 jobs:
   build:
@@ -24,7 +21,7 @@ jobs:
       with:
         name: debian-sid-arm64-rootfs.tar.xz
         path: debian-sid-arm64-rootfs.tar.xz
-    - name: Upload rootfs to Release
-      uses: softprops/action-gh-release@v2
-      with:
-          files: debian-sid-arm64-rootfs.tar.xz
+#    - name: Upload rootfs to Release
+#      uses: softprops/action-gh-release@v2
+#      with:
+#          files: debian-sid-arm64-rootfs.tar.xz
