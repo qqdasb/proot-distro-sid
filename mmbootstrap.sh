@@ -1,5 +1,5 @@
 sudo mmdebstrap \
-	--mode=unshare \
+	--mode=sudo \
 	--architectures=arm64 \
 	--variant=standard \
 	--components="main,contrib,non-free,non-free-firmware" \
