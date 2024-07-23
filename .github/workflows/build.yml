@@ -16,7 +16,7 @@ jobs:
     - name: Prepare
       run: |
         sudo apt update
-        sudo apt installcurl debian-archive-keyring jq mmdebstrap qemu-user-static binfmt-support multistrap
+        sudo apt install curl debian-archive-keyring jq mmdebstrap qemu-user-static binfmt-support multistrap
         sudo chmod a+x *.sh
     - name: Build
       run: ./mmbootstrap.sh
