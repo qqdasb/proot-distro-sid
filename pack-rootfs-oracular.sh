@@ -9,5 +9,5 @@ sudo tar \
 	--xattrs-include='*' \
 	--xz \
 	--file="ubuntu-oracular-arm64-rootfs.tar.xz" \
-	debian-sid-arm64
+	ubuntu-oracular-arm64
 sudo chown $(id -un):$(id -gn) ubuntu-oracular-arm64-rootfs.tar.xz
