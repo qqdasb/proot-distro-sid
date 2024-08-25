@@ -1,0 +1,23 @@
+name: Build rootfs for armhf
+on: 
+  schedule:
+    - cron: "0 0 * * *"
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+    - uses: actions/checkout@v4
+    - name: Prepare
+      run: |
+        sudo apt update
+        sudo apt install curl debian-archive-keyring jq mmdebstrap qemu-user-static binfmt-support multistrap
+        sudo chmod a+x *.sh
+    - name: Build
+      run: ./mmbootstrap-armhf.sh
+    - name: Pack rootfs
+      run: ./pack-rootfs-armhf.sh
+    - name: Upload rootfs
+      uses: actions/upload-artifact@v4
+      with:
+        name: debian-sid-armhf-rootfs.tar.xz
+        path: debian-sid-armhf-rootfs.tar.xz
