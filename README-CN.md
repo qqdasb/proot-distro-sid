@@ -15,7 +15,7 @@ wget https://raw.staticdn.net/qqdasb/proot-distro-sid/main/debian-unstable.sh -O
 3.安装
 
 ```bash
-pd install debian-unstable
+pd i debian-unstable
 ```
 
 夜间镜像在[Actions](https://github.com/qqdasb/proot-distro-sid/actions)里
