@@ -8,6 +8,6 @@ sudo tar \
 	--xattrs \
 	--xattrs-include='*' \
 	--xz \
-	--file="ubuntu-oracular-arm64-rootfs.tar.xz" \
-	ubuntu-oracular-arm64
-sudo chown $(id -un):$(id -gn) ubuntu-oracular-arm64-rootfs.tar.xz
+	--file="ubuntu-plucky-arm64-rootfs.tar.xz" \
+	ubuntu-plucky-arm64
+sudo chown $(id -un):$(id -gn) ubuntu-plucky-arm64-rootfs.tar.xz

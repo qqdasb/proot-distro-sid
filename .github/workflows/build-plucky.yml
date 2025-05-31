@@ -1,4 +1,4 @@
-name: Build rootfs for oracular
+name: Build rootfs for plucky
 on: 
   schedule:
     - cron: "0 0 * * *"
@@ -13,11 +13,11 @@ jobs:
         sudo apt install curl jq mmdebstrap qemu-user-static binfmt-support multistrap
         sudo chmod a+x *.sh
     - name: Build
-      run: ./mmbootstrap-oracular.sh
+      run: ./mmbootstrap-plucky.sh
     - name: Pack rootfs
-      run: ./pack-rootfs-oracular.sh
+      run: ./pack-rootfs-plucky.sh
     - name: Upload rootfs
       uses: actions/upload-artifact@v4
       with:
-        name: ubuntu-oracular-arm64-rootfs.tar.xz
-        path: ubuntu-oracular-arm64-rootfs.tar.xz
+        name: ubuntu-plucky-arm64-rootfs.tar.xz
+        path: ubuntu-plucky-arm64-rootfs.tar.xz

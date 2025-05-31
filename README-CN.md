@@ -18,8 +18,6 @@ wget https://raw.staticdn.net/qqdasb/proot-distro-sid/main/debian-unstable.sh -O
 pd i debian-unstable
 ```
 
-夜间镜像在[Actions](https://github.com/qqdasb/proot-distro-sid/actions)里
-
 
 
 

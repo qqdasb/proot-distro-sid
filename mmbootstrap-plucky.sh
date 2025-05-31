@@ -4,5 +4,5 @@ sudo mmdebstrap \
 	--variant=standard \
 	--components="main,restricted,universe,multiverse" \
 	--format=directory \
-	oracular \
-	ubuntu-oracular-arm64
+	plucky \
+	ubuntu-plucky-arm64

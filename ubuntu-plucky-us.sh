@@ -1,7 +1,7 @@
-DISTRO_NAME="Debian (sid)"
-DISTRO_COMMENT="Unstable release."
+DISTRO_NAME="Ubuntu (25.04)"
+DISTRO_COMMENT="Unstable release (plucky)."
 
-TARBALL_URL['aarch64']="https://github.com/qqdasb/proot-distro-sid/releases/download/v2.0.0/debian-sid-arm64-rootfs.tar.xz"
+TARBALL_URL['aarch64']="https://github.com/qqdasb/proot-distro-sid/releases/download/v2.0.0/ubuntu-plucky-arm64-rootfs.tar.xz"
 TARBALL_SHA256['aarch64']=""
 
 distro_setup() {
