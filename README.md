@@ -16,7 +16,7 @@ wget https://github.com/qqdasb/proot-distro-sid/raw/main/debian-unstable-us.sh -
 For Chinese users
 
 ```bash
-wget https://raw.staticdn.net/qqdasb/proot-distro-sid/main/debian-unstable.sh -O $PREFIX/etc/proot-distro/debian-unstable.sh
+wget https://raw-hub.myxuebi.top/qqdasb/proot-distro-sid/main/debian-unstable.sh -O $PREFIX/etc/proot-distro/debian-unstable.sh
 ```
 
 3.Install
